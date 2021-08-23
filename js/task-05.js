@@ -4,7 +4,11 @@ const inputName = qs("#name-input");
 const outputName = qs("#name-output");
 
 const inputText = () => {
-  outputName.innerText = inputName.value;
+  if (inputName.value === "") {
+    outputName.innerText = "Anonymous";
+  } else {
+    outputName.innerText = inputName.value;
+  }
 };
 
 inputName.addEventListener("input", inputText);
