@@ -7,4 +7,4 @@ const inputText = () => {
   outputName.innerText = inputName.value;
 };
 
-inputName.addEventListener("change", inputText);
+inputName.addEventListener("input", inputText);
