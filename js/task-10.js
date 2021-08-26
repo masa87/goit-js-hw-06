@@ -27,7 +27,7 @@ function createRandom() {
   }
 }
 
-const removeItem = () => {
+const destroyBoxes = () => {
   while (boxes.firstChild) {
     boxes.removeChild(boxes.firstChild);
     boxSize = 20;
@@ -35,4 +35,4 @@ const removeItem = () => {
 };
 
 create.addEventListener("click", createRandom);
-destroy.addEventListener("click", removeItem);
+destroy.addEventListener("click", destroyBoxes);
